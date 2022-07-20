@@ -77,7 +77,7 @@ public class RController  {
     @GetMapping(path="/getAllCSV", produces="application/json")
     public synchronized ResponseEntity<Resource> getAllCSV(HttpServletRequest request) throws Exception {
         service.getAllCSV();
-        return downloadFile("addressbook.csv", request);
+        return downloadFile("hsbc.csv", request);
     }
     @GetMapping(path="/getAll", produces="application/json")
     public ResponseEntity<List<ResponseBean>> getAll() throws Exception {

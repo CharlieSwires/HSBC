@@ -1,7 +1,5 @@
 package restful;
 
-import java.time.LocalDate;
-
 public class RequestBean {
     public RequestBean() {
         
@@ -11,7 +9,7 @@ public class RequestBean {
     private String firstname;
     private String surname;
     //encrypted
-    private LocalDate DOB;
+    private String DOB;
     private String JobTitle;
     
     @Override
@@ -44,20 +42,20 @@ public class RequestBean {
         this.surname = surname;
     }
 
-    public LocalDate getDOB() {
-        return DOB;
+    public String getDOB() {
+        return this.DOB;
     }
 
-    public void setDOB(LocalDate dOB) {
-        DOB = dOB;
+    public void setDOB(String dOB) {
+        this.DOB = dOB;
     }
 
     public String getJobTitle() {
-        return JobTitle;
+        return this.JobTitle;
     }
 
     public void setJobTitle(String jobTitle) {
-        JobTitle = jobTitle;
+        this.JobTitle = jobTitle;
     }
  
 }

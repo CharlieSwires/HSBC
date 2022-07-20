@@ -61,22 +61,22 @@ public class MongoBean {
     
     
     public String getDOB() {
-        return (DOB != null && !DOB.isEmpty()? Encryption.decrypt(privateKey, DOB):null);
+        return (this.DOB != null && !this.DOB.isEmpty()? Encryption.decrypt(privateKey, this.DOB):null);
     }
-    public void setDOB(String address) {
-        this.DOB = (DOB != null && !DOB.isEmpty()? Encryption.encrypt(publicKey, DOB):null);
+    public void setDOB(String dOB) {
+        this.DOB = (dOB != null && !dOB.isEmpty()? Encryption.encrypt(publicKey, dOB):null);
     }
     public String getJobTitle() {
         return (JobTitle != null && !JobTitle.isEmpty()? Encryption.decrypt(privateKey, JobTitle):null);
     }   
-    public void setJobTitle(String JobTitle) {
-        this.JobTitle = (JobTitle != null && !JobTitle.isEmpty()? Encryption.encrypt(publicKey, JobTitle):null);
+    public void setJobTitle(String jobTitle) {
+        this.JobTitle = (jobTitle != null && !jobTitle.isEmpty()? Encryption.encrypt(publicKey, jobTitle):null);
     }
     public Date getCreateStamp() {
-        return CreateStamp;
+        return this.CreateStamp;
     }
     public void setCreateStamp(Date createStamp) {
-        CreateStamp = createStamp;
+        this.CreateStamp = createStamp;
     }
 
 }

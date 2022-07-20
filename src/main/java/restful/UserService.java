@@ -30,15 +30,17 @@ public class UserService {
     private MongoBeanRepository beanRepository;
 
     public synchronized Boolean save(RequestBean input) {
-        assert(input != null);
+        if (input == null) {
+            throw new IllegalArgumentException("input cannot be null");
+        }
         delete(input.getFirstname(), input.getSurname());
         MongoBean mb  = new MongoBean();
         mb.setFirstname(input.getFirstname());
         mb.setSurname(input.getSurname());
         mb.setTitle(input.getTitle());
+        mb.setDOB(input.getDOB());
         mb.setJobTitle(input.getJobTitle());
         mb.setCreateStamp(new Date());
-        mb.setDOB(input.getDOB().toString());
         beanRepository.save(mb);
         return true;
     }
