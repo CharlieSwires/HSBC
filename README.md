@@ -33,3 +33,18 @@ RESTful
 <p>http://localhost:8888/HSBC/UserEntry/getAll -- returns list of JSON</p>
 <p>http://localhost:8888/HSBC/UserEntry/loadAll</p>
 
+Example JSON
+------------
+<p></p>
+<p>{</p>
+<p>    "title": "Mr",</p>
+<p>    "firstname": "Charlie",</p>
+<p>    "surname": "Swires",</p>
+<p>    "dob": "1967-11-20",</p>
+<p>    "jobTitle": "Senior Software Engineer"</p>
+<p>}</p>
+<p></p>
+
+Swagger
+-------
+<p>Swagger added to pom.xml</p>
