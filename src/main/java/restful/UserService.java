@@ -144,7 +144,7 @@ public class UserService {
     public synchronized void loadFromCSV() throws IOException {
         beanRepository.deleteAll();
         try (
-                Reader reader = Files.newBufferedReader(Paths.get("addressbook.csv"));
+                Reader reader = Files.newBufferedReader(Paths.get("hsbc.csv"));
                 CSVParser csvParser = new CSVParser(reader, CSVFormat.DEFAULT
                         .withHeader("id","Title","Firstname","Surname","DOB","JobTitle","CreateStamp")
                         .withIgnoreHeaderCase()

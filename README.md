@@ -24,9 +24,10 @@ RESTful
 -------
 
 <p>http://localhost:8888/HSBC/UserEntry/add</p>
-<p>http://localhost:8888/HSBC/UserEntry/delete/{firstName}/{lastName}</p>
+<p>http://localhost:8888/HSBC/UserEntry/delete/{firstName}/{lastName}</p><p>http://localhost:8888/HSBC/UserEntry/delete/{id}</p>
 <p>http://localhost:8888/HSBC/UserEntry/get/{firstName}/{lastName}</p>
 <p>http://localhost:8888/HSBC/UserEntry/get/{lastName} -- returns list of JSON</p>
+<p>http://localhost:8888/HSBC/UserEntry/getId/{id} -- returns single JSON</p>
 <p>http://localhost:8888/HSBC/UserEntry/getFirst/{firstname} -- returns list of JSON</p>
 <p>http://localhost:8888/HSBC/UserEntry/getAllCSV -- returns CSV file</p>
 <p>http://localhost:8888/HSBC/UserEntry/getAll -- returns list of JSON</p>
