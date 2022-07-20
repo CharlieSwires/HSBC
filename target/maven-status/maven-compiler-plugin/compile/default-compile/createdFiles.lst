@@ -1,0 +1,12 @@
+restful\RequestBean.class
+restful\ResponseBean.class
+com\mongodb\MongoBean.class
+com\mongodb\MongoBeanRepository.class
+restful\MainApp.class
+restful\FileStorageService.class
+restful\UserService$2.class
+restful\Encryption$FixedRand.class
+restful\UserService$1.class
+restful\RController.class
+restful\UserService.class
+restful\Encryption.class
