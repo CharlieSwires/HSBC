@@ -5,6 +5,7 @@ HSBC
 
 build
 -----
+<p>you'll need an application.properties file with the DB username and password URL</p>
 <p>mvn package</p>
 
 <p>produces HSBC.war in target</p>
